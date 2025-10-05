@@ -2,7 +2,8 @@ body {font-family: 'Courier-New', monospace;}
 
 h1, h2 {color: lightcoral;}
 
+.tabletitle {color: lightcoral;}
 .evenrow {background-color: lavenderblush;}
 
-h1 {font-size: 3em;}
-h2 {font-size: 2em;}
+h1 {font-size: 2.5em;}
+h2 {font-size: 1.5em;}
