@@ -1,0 +1,32 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #FFF9BD;
+    color: #F38181;
+}
+
+h1 {color: #5F99AE;}
+h2 {color: #84AE92;}
+
+.tabletitle {
+    color: #5F99AE;
+    font-weight: bold;
+}
+.evenrow {background-color: #DEE791;}
+.oddrow {background-color: #FFDCDC;}
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 1.5em;}
+
+a:link {color: #C599B6;}
+a:visited {color: #C599B6;}
+a:hover {color: #D9C4B0;}
+
+nav {
+    background-color: #DDF6D2;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a:link {color: #f3a159;}
+nav a:visited {color: #f3a159;}
+nav a:hover {background-color: #dacfc4;}
