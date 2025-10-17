@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Contact</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="skills.html">Skills</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Contact</h1>
+        <p>Thanhngan Nguyen</p>
+        <p>Syracuse University</p>
+        <p>900 S Crouse Ave, Syracuse, NY 13244</p>
+        <p><a href="mailto:tnguye09@syr.edu">tnguye09@syr.edu</a></p>
+        <p>
+            <a href="https://www.linkedin.com/in/thanhngan-nguyen" target="_blank">
+                <img src="../images/linked_in.png">
+            </a>
+            <a href="https://www.linkedin.com/in/thanhngan-nguyen" target="_blank">My LinkedIn Profile</a>
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.623673623229!2d-76.14062992416186!3d43.049348891277006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a5e0952113%3A0xa671279445418b15!2s820-900%20S%20Crouse%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1757537181269!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <hr>
+
+        <h2>Contact Me Below</h2>
+        <form action="https://formspree.io/f/mblavbkj" method="POST">
+            <p>What is your name?</p>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname">
+
+            <p>What is your class standing?</p>
+            <input type="radio" id="freshman" name="class_standing" value="freshman">
+            <label for="freshman">Freshman</label><br>
+            <input type="radio" id="sophomore" name="class_standing" value="sophomore">
+            <label for="sophomore">Sophomore</label><br>
+            <input type="radio" id="junior" name="class_standing" value="junior">
+            <label for="junior">Junior</label><br>
+            <input type="radio" id="senior" name="class_standing" value="senior">
+            <label for="senior">Senior</label><br>
+            <input type="radio" id="graduate" name="class_standing" value="graduate">
+            <label for="graduate">Graduate Student</label>
+
+            <p><label for="message">Message:</label></p>
+            <textarea id="message" name="message"></textarea>
+            
+            <p><input type="submit" value="Submit"></p>
+        </form>
+    </body>
+</html>
