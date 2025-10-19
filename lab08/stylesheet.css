@@ -1,6 +1,6 @@
 body {
     font-family: 'Trebuchet MS', sans-serif;
-    background-color: #FFF9BD;
+    background-color: #FFF7D1;
     color: #F38181;
 }
 
@@ -17,9 +17,9 @@ h2 {color: #84AE92;}
 h1 {font-size: 2.5em;}
 h2 {font-size: 1.5em;}
 
-a:link {color: #C599B6;}
-a:visited {color: #C599B6;}
-a:hover {color: #D9C4B0;}
+a:link {color: #6D94C5;}
+a:visited {color: #6D94C5;}
+a:hover {color: #CBDCEB;}
 
 nav {
     background-color: #DDF6D2;
