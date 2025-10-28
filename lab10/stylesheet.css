@@ -1,0 +1,68 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #FFF7D1;
+    color: #F38181;
+}
+
+h1 {
+    color: #5F99AE;
+    text-align: center;
+    font-size: 2.5em;
+}
+h2 {
+    color: #84AE92;
+    font-size: 1.5em;
+}
+
+.tabletitle {
+    color: #5F99AE;
+    font-weight: bold;
+}
+.evenrow {background-color: #DEE791;}
+.oddrow {background-color: #FFDCDC;}
+
+a:link {color: #6D94C5;}
+a:visited {color: #6D94C5;}
+a:hover {color: #CBDCEB;}
+
+nav {
+    background-color: #DDF6D2;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a:link {color: #f3a159;}
+nav a:visited {color: #f3a159;}
+nav a:hover {background-color: #dacfc4;}
+
+.skills_content {
+    padding: 65px;
+    padding-top: 0px;
+}
+
+.skills_flex {
+    display: flex;
+}
+
+.skills_flex2 {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    padding-right: 22px;
+}
+
+.icons {
+    color: #d8a7ae;
+    display: flex;
+    flex: 3;
+    justify-content: space-around;
+    padding: 55px;
+}
+
+ .sidebar {
+    background-color: #CBDCEB;
+    color: #ee91c1;
+    border-radius: 2em;
+    padding: 20px;
+    flex: 1;
+}
