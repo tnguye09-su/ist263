@@ -35,6 +35,11 @@ nav a:link {color: #f3a159;}
 nav a:visited {color: #f3a159;}
 nav a:hover {background-color: #dacfc4;}
 
+.pfp {
+    float: left;
+    margin-right: 12px;
+    max-width: 100%;}
+
 .skills_content {
     padding: 65px;
     padding-top: 0px;
