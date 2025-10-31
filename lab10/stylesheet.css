@@ -57,7 +57,10 @@ nav a:hover {background-color: #dacfc4;}
 .section2 div {padding: 25px;}
 
 .contact {flex: 1;}
-.map {flex: 1;}
+.map {
+    flex: 1;
+    padding: 25px;
+}
 
 .section1, .section2 {margin: 20px;}
 
