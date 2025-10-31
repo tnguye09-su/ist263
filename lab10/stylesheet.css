@@ -100,7 +100,7 @@ nav a:hover {background-color: #dacfc4;}
     nav a {
         width: 100%;
         display: block;
-        margin: 9px;
+        margin: 8.5px;
     }
     nav span {display: none;}
 }
