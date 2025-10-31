@@ -38,7 +38,8 @@ nav a:hover {background-color: #dacfc4;}
 .pfp {
     float: left;
     margin-right: 12px;
-    max-width: 100%;}
+    max-width: 200px;
+    height: auto;}
 
 .skills_content {
     padding: 65px;
