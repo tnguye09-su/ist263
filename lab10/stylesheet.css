@@ -95,3 +95,11 @@ nav a:hover {background-color: #dacfc4;}
     padding: 20px;
     flex: 1;
 }
+
+@media only screen and (max-width: 768px) {
+    nav a {
+        width: 100%;
+        display: block;
+    }
+    nav span {display: none;}
+}
