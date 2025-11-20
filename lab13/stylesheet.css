@@ -1,16 +1,16 @@
 body {
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #FFF7D1;
-    color: #F38181;
+    color: #D71462;
 }
 
 h1 {
-    color: #5F99AE;
+    color: #5C97AD;
     text-align: center;
     font-size: 2.5em;
 }
 h2 {
-    color: #84AE92;
+    color: #659A7A;
     font-size: 1.5em;
 }
 
@@ -31,9 +31,9 @@ nav {
     margin-bottom: 30px;
 }
 
-nav a:link {color: #f3a159;}
-nav a:visited {color: #f3a159;}
-nav a:hover {background-color: #dacfc4;}
+nav a:link {color: #A7540C;}
+nav a:visited {color: #A7540C;}
+nav a:hover {color: #f3a159;}
 
 .pfp {
     float: left;
