@@ -1,7 +1,7 @@
 body {
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #FFF7D1;
-    color: #cb4c4c;
+    color: #d74c4c;
 }
 
 h1 {
@@ -31,8 +31,8 @@ nav {
     margin-bottom: 30px;
 }
 
-nav a:link {color: #ce7222;}
-nav a:visited {color: #ce7222;}
+nav a:link {color: #da751c;}
+nav a:visited {color: #da751c;}
 nav a:hover {background-color: #dacfc4;}
 
 .pfp {
