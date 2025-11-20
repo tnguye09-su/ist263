@@ -96,6 +96,24 @@ nav a:hover {background-color: #dacfc4;}
     flex: 1;
 }
 
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  color: white;
+  background: #ff9b85;
+  padding: 8px;
+}
+
 @media only screen and (max-width: 768px) {
     nav a {
         width: 100%;
