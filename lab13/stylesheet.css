@@ -1,16 +1,16 @@
 body {
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #FFF7D1;
-    color: #d74c4c;
+    color: #F38181;
 }
 
 h1 {
-    color: #53879a;
+    color: #5F99AE;
     text-align: center;
     font-size: 2.5em;
 }
 h2 {
-    color: #577f64;
+    color: #84AE92;
     font-size: 1.5em;
 }
 
@@ -31,8 +31,8 @@ nav {
     margin-bottom: 30px;
 }
 
-nav a:link {color: #da751c;}
-nav a:visited {color: #da751c;}
+nav a:link {color: #f3a159;}
+nav a:visited {color: #f3a159;}
 nav a:hover {background-color: #dacfc4;}
 
 .pfp {
@@ -94,24 +94,6 @@ nav a:hover {background-color: #dacfc4;}
     border-radius: 2em;
     padding: 20px;
     flex: 1;
-}
-
-.skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  color: white;
-  background: #ff9b85;
-  padding: 8px;
 }
 
 @media only screen and (max-width: 768px) {
