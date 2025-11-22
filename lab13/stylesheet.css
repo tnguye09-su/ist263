@@ -35,6 +35,8 @@ nav a:link {color: #A7540C;}
 nav a:visited {color: #A7540C;}
 nav a:hover {color: #f3a159;}
 
+span {color: #A7540C;}
+
 .pfp {
     float: left;
     margin-right: 12px;
