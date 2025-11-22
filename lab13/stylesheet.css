@@ -10,7 +10,7 @@ h1 {
     font-size: 2.5em;
 }
 h2 {
-    color: #659A7A;
+    color: #578565;
     font-size: 1.5em;
 }
 
@@ -21,8 +21,8 @@ h2 {
 .evenrow {background-color: #DEE791;}
 .oddrow {background-color: #FFDCDC;}
 
-a:link {color: #6D94C5;}
-a:visited {color: #6D94C5;}
+a:link {color: #4370A8;}
+a:visited {color: #4370A8;}
 a:hover {color: #CBDCEB;}
 
 nav {
@@ -44,14 +44,14 @@ span {color: #A7540C;}
     height: auto;}
 
 .section1 {
-    background-color: #FFE8CD;
+    background-color: #FFF2E0;
     border-radius: 2em;
     display: flex;
 }
 .section1 div {padding: 25px;}
 
 .section2 {
-    background-color: #F7DBF0;
+    background-color: #FEF6FC;
     border-radius: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -92,7 +92,7 @@ span {color: #A7540C;}
 
  .sidebar {
     background-color: #CBDCEB;
-    color: #ee91c1;
+    color: #B01C68;
     border-radius: 2em;
     padding: 20px;
     flex: 1;
