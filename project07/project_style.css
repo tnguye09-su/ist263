@@ -1,5 +1,8 @@
 body {
-    font-family: 'Georgia', serif;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 380;
+    font-style: normal;
     background-color: #F2EFC7;
     color: #965a43;
 }
