@@ -15,12 +15,22 @@
         <link rel="stylesheet" href="project_style.css">
     </head>
     <body>
+        <a href="#main" class="skip">Skip to Content</a>
         <nav>
             <div class="nav_title">Welcome to Vietnam!</div>
             <div class="nav_links">
                 <a href="homepage.html">Home</a> <span>|</span>
                 <a href="foods_fruits.html">Foods and Fruits</a> <span>|</span>
                 <a href="funfacts.html">Fun Facts</a>
+            </div>
+
+            <div class="nav_dropdown w3-dropdown-click">
+                <button class="nav_menu_btn" onclick="toggleMenu()">Menu</button>
+                <div id="navMenu" class="w3-dropdown-content w3-bar-block w3-card">
+                    <a href="homepage.html" class="w3-bar-item w3-button">Home</a>
+                    <a href="foods_fruits.html" class="w3-bar-item w3-button">Foods and Fruits</a>
+                    <a href="funfacts.html" class="w3-bar-item w3-button">Fun Facts</a>
+                </div>
             </div>
         </nav>
 
@@ -75,7 +85,7 @@
 
             <h2>MAJOR CITIES IN VIETNAM</h2>
 
-            <div class="city_flex">
+            <div id="main" class="city_flex">
                 <section class="city_box1">
                     <div class="city_slideshow">
                         <figure class="w3-content w3-display-container slideshow-hcmc" style="max-width: 600px">
@@ -178,6 +188,16 @@
                 </section>
             </div>
         </main>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("navMenu");
+                if (menu.classList.contains("w3-show")) {
+                    menu.classList.remove("w3-show");
+                } else {
+                    menu.classList.add("w3-show");
+                }
+            }
+        </script>
         <script>
             var slideIndex = [1, 1, 1, 1];
             var slideId = ["hcmc_slides", "hanoi_slides", "cantho_slides", "danang_slides"];

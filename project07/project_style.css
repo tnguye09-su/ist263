@@ -9,6 +9,24 @@ body {
     font-size: 16px;
 }
 
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  color: #63372C;
+  background: #f6c2bc;
+  padding: 8px;
+}
+
 nav, main {
     max-width: 1495px;
     margin: 0 auto;
@@ -41,6 +59,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: visible;
 }
 
 nav a:link, nav a:visited {color: white;}
@@ -49,6 +68,43 @@ nav a:hover {color: #FEBCB5}
 .nav_title {
     font-size: 1.85em;
     color: white;}
+
+.nav_dropdown {
+    display: none;
+    position: relative;
+}
+
+.nav_menu_btn {
+    background-color: #63372C;
+    color: #FFEEE2;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.nav_menu_btn:hover {
+    background-color: #f6c2bc;
+    color: #63372C;
+}
+
+#navMenu {
+    background-color: #FFEEE2;
+    border: 3px solid #63372C;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 220px;
+    right: 0;
+    left: auto;
+}
+
+#navMenu a {
+    color: #63372C;
+}
+
+#navMenu a:hover {
+    background-color: #f6c2bc !important;
+    color: #63372C !important;
+}
 
 .food_flex, .fruit_flex {
     display: flex;
@@ -217,13 +273,16 @@ nav a:hover {color: #FEBCB5}
     object-fit: contain;
 }
 
-@media only screen and (max-width: 650px) {
-    nav a {
-        width: 100%;
-        display: block;
-        margin: 8.5px;
+@media only screen and (max-width: 768px) {
+    .nav_links {
+        display: none !important;
     }
-    nav span {display: none;}
+    .nav_dropdown {
+        display: block !important;
+    }
+    nav {
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -234,27 +293,22 @@ nav a:hover {color: #FEBCB5}
         align-items: stretch;
         gap: 20px;
     }
-
     .city_box2,
     .funfact_box2 {
         flex-direction: column;
     }
-
     .city_slideshow,
     .funfact_slideshow {
         flex: 0 0 auto;
         width: 100%;
     }
-
     .w3-content {
         max-width: 100% !important;
     }
-
     .city_info h3,
     .funfact_info h3 {
         text-align: center;
     }
-
     .hcmc_slides,
     .hanoi_slides,
     .cantho_slides,

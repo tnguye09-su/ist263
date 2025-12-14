@@ -30,12 +30,22 @@
         </style>
     </head>
     <body>
+        <a href="#main" class="skip">Skip to Content</a>
         <nav>
             <div class="nav_title">Welcome to Vietnam!</div>
             <div class="nav_links">
                 <a href="homepage.html">Home</a> <span>|</span>
                 <a href="foods_fruits.html">Foods and Fruits</a> <span>|</span>
                 <a href="funfacts.html">Fun Facts</a>
+            </div>
+
+            <div class="nav_dropdown w3-dropdown-click">
+                <button class="nav_menu_btn" onclick="toggleMenu()">Menu</button>
+                <div id="navMenu" class="w3-dropdown-content w3-bar-block w3-card">
+                    <a href="homepage.html" class="w3-bar-item w3-button">Home</a>
+                    <a href="foods_fruits.html" class="w3-bar-item w3-button">Foods and Fruits</a>
+                    <a href="funfacts.html" class="w3-bar-item w3-button">Fun Facts</a>
+                </div>
             </div>
         </nav>
 
@@ -51,7 +61,7 @@
                 <hr>
             </header>
 
-            <section class="funfact_flex">
+            <section id="main" class="funfact_flex">
                 <section class="funfact_box1">
                     <h3>NATIONAL FLOWER: LOTUS</h3>
                     <p>
@@ -127,6 +137,16 @@
                 </div>
             </section>
         </main>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("navMenu");
+                if (menu.classList.contains("w3-show")) {
+                    menu.classList.remove("w3-show");
+                } else {
+                    menu.classList.add("w3-show");
+                }
+            }
+        </script>
         <script>
             var slideIndex = [1, 1];
             var slideId = ["aodai_slides", "tet_slides"];

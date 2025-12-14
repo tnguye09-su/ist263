@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
         <link rel="stylesheet" href="project_style.css">
         
         <style>
@@ -35,12 +36,22 @@
         </style>
     </head>
     <body>
+        <a href="#main" class="skip">Skip to Content</a>
         <nav>
             <div class="nav_title">Welcome to Vietnam!</div>
             <div class="nav_links">
                 <a href="homepage.html">Home</a> <span>|</span>
                 <a href="foods_fruits.html">Foods and Fruits</a> <span>|</span>
                 <a href="funfacts.html">Fun Facts</a>
+            </div>
+
+            <div class="nav_dropdown w3-dropdown-click">
+                <button class="nav_menu_btn" onclick="toggleMenu()">Menu</button>
+                <div id="navMenu" class="w3-dropdown-content w3-bar-block w3-card">
+                    <a href="homepage.html" class="w3-bar-item w3-button">Home</a>
+                    <a href="foods_fruits.html" class="w3-bar-item w3-button">Foods and Fruits</a>
+                    <a href="funfacts.html" class="w3-bar-item w3-button">Fun Facts</a>
+                </div>
             </div>
         </nav>
 
@@ -57,7 +68,7 @@
                 dish. Let’s explore some popular dishes!
             </p>
 
-            <div class="food_flex">
+            <div id="main" class="food_flex">
                 <section class="food_box">
                     <h3>PHO (PHỞ)</h3>
                     <figure>
@@ -174,5 +185,15 @@
                 </section>
             </div>
         </main>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("navMenu");
+                if (menu.classList.contains("w3-show")) {
+                    menu.classList.remove("w3-show");
+                } else {
+                    menu.classList.add("w3-show");
+                }
+            }
+        </script>
     </body>
 </html>
