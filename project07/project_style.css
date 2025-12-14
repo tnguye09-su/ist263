@@ -1,13 +1,29 @@
 body {
     font-family: "Playpen Sans", cursive;
     font-optical-sizing: auto;
-    font-weight: 380;
+    font-weight: 400;
     font-style: normal;
     background-color: #F2EFC7;
     color: #965a43;
+    margin: 8px;
+    font-size: 16px;
 }
 
-h1, h2, h3 {color: #63372C;}
+nav, main {
+    max-width: 1495px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "Playpen Sans", cursive;
+    color: #63372C;
+    font-size: revert;
+    font-weight: revert;
+    line-height: revert;
+    margin: revert;
+}
 
 h2, h3 {text-align: center;}
 
@@ -41,7 +57,7 @@ nav a:hover {color: #FEBCB5}
     flex-wrap: wrap;
 }
 
-.food, .fruit {
+.food_box, .fruit_box {
     background-color: #FFEEE2;
     padding: 12px;
     border-radius: 20px;
@@ -51,11 +67,154 @@ nav a:hover {color: #FEBCB5}
     max-width: 24%;
 }
 
-.food img, .fruit img {
+.food_box img, .fruit_box img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.funfact_flex {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.funfact_box1 {
+    background-color: #FFEEE2;
+    padding: 12px;
+    border-radius: 20px;
+    border: 3px solid #63372C;
+    box-sizing: border-box;
+    flex: 0 1 45%;
+    max-width: 45%;
+    text-align: center;
+}
+
+.funfact_box1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hcmc_slides, .hanoi_slides, .cantho_slides, .danang_slides {
+    display: none;
+    width: 100%;
+    height: 400px;
+    object-fit: contain; 
+}
+
+.w3-display-container {
+    overflow: visible;
+    position: relative;
+}
+
+.w3-display-container .w3-button {
+    background-color: #63372C;
+    color: #FFEEE2;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.w3-display-container .w3-button:hover {
+    background-color: #f6c2bc !important;
+    color: #63372C;
+}
+
+.slide_frame {
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+.w3-display-container .w3-display-left {
+    left: 15px;
+}
+.w3-display-container .w3-display-right {
+    right: 15px;
+}
+
+.city_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city_box1, .city_box2 {
+    display: flex;
+    gap: 30px;
+    background-color: #FFEEE2;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid #63372C;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.city_slideshow {
+    flex: 0 0 600px;
+}
+
+.city_info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.city_info h3 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.city_box2 {
+    flex-direction: row-reverse;
+}
+
+.funfact_box2 {
+    display: flex;
+    gap: 30px;
+    background-color: #FFEEE2;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid #63372C;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    flex-direction: row-reverse;
+}
+
+.funfact_slideshow {
+    flex: 0 0 600px;
+}
+
+.funfact_info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.funfact_info h3 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.aodai_slides, .tet_slides {
+    display: none;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
 }
 
 @media only screen and (max-width: 650px) {
@@ -65,4 +224,43 @@ nav a:hover {color: #FEBCB5}
         margin: 8.5px;
     }
     nav span {display: none;}
+}
+
+@media only screen and (max-width: 992px) {
+    .city_box1,
+    .city_box2,
+    .funfact_box2 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .city_box2,
+    .funfact_box2 {
+        flex-direction: column;
+    }
+
+    .city_slideshow,
+    .funfact_slideshow {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .w3-content {
+        max-width: 100% !important;
+    }
+
+    .city_info h3,
+    .funfact_info h3 {
+        text-align: center;
+    }
+
+    .hcmc_slides,
+    .hanoi_slides,
+    .cantho_slides,
+    .danang_slides,
+    .aodai_slides,
+    .tet_slides {
+        height: 320px;
+    }
 }
