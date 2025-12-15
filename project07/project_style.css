@@ -60,6 +60,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     overflow: visible;
+    flex-wrap: nowrap;
+    position: relative;
 }
 
 nav a:link, nav a:visited {color: white;}
@@ -67,7 +69,9 @@ nav a:hover {color: #FEBCB5}
 
 .nav_title {
     font-size: 1.85em;
-    color: white;}
+    color: white;
+    white-space: nowrap;
+}
 
 .nav_dropdown {
     display: none;
@@ -80,6 +84,7 @@ nav a:hover {color: #FEBCB5}
     border: none;
     padding: 8px 16px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .nav_menu_btn:hover {
@@ -95,6 +100,10 @@ nav a:hover {color: #FEBCB5}
     min-width: 220px;
     right: 0;
     left: auto;
+    position: absolute;
+    top: 100%;
+    margin-top: 8px;
+    z-index: 9999;
 }
 
 #navMenu a {
@@ -193,6 +202,26 @@ nav a:hover {color: #FEBCB5}
     right: 15px;
 }
 
+.slide_controls {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 12px;
+}
+
+.slide_btn {
+    background-color: #63372C;
+    color: #FFEEE2;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-size: 1.4em;
+}
+
+.slide_btn:hover {
+    background-color: #f6c2bc;
+    color: #63372C;
+}
+
 .city_flex {
     display: flex;
     flex-direction: column;
@@ -279,9 +308,15 @@ nav a:hover {color: #FEBCB5}
     }
     .nav_dropdown {
         display: block !important;
+        align-self: flex-end;
+        position: relative;
     }
-    nav {
-        flex-wrap: wrap;
+    .nav_title {
+        font-size: 1.5em;
+    }
+    #navMenu {
+        max-height: 60vh;
+        overflow-y: auto;
     }
 }
 
@@ -316,5 +351,26 @@ nav a:hover {color: #FEBCB5}
     .aodai_slides,
     .tet_slides {
         height: 320px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slide_frame {
+        padding: 0;
+        height: 55vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFEEE2;
+    }
+    .hcmc_slides,
+    .hanoi_slides,
+    .cantho_slides,
+    .danang_slides {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
     }
 }
