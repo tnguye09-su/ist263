@@ -30,7 +30,7 @@
         </style>
     </head>
     <body>
-        <a href="#main" class="skip">Skip to Content</a>
+        <a href="#flower" class="skip">Skip to Content</a>
         <nav>
             <div class="nav_title">Welcome to Vietnam!</div>
             <div class="nav_links">
@@ -61,9 +61,9 @@
                 <hr>
             </header>
 
-            <section id="main" class="funfact_flex">
+            <div class="funfact_flex">
                 <section class="funfact_box1">
-                    <h3>NATIONAL FLOWER: LOTUS</h3>
+                    <h3 id="flower" tabindex="-1">NATIONAL FLOWER: LOTUS</h3>
                     <p>
                         The lotus flower is considered Vietnam’s national flower, and symbolizes purity,
                         elegance, and strength.
@@ -83,11 +83,11 @@
                         <img src="../project/media/water_buffalo.jpg" alt="Water Buffalo" width="375">
                     </figure>
                 </section>
-            </section>
+            </div>
 
 
-            <section class="funfact_box2">
-                <div class="funfact_slideshow">
+            <div class="funfact_box2">
+                <section class="funfact_slideshow">
                     <figure class="w3-content w3-display-container slideshow-aodai" style="max-width: 600px">
                         <div class="slide_frame">
                             <img class="aodai_slides" src="../project/media/aodai_green.jpg" alt="Green Ao Dai">
@@ -98,20 +98,20 @@
                         <button class="w3-button w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
                         <button class="w3-button w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
                     </figure>
-                </div>
+                </section>
 
-                <div class="funfact_info">
+                <section class="funfact_info">
                     <h3>TRADITIONAL CLOTHING</h3>
                     <p>
                         Vietnam’s national dress is called “Áo Dài”. The clothing has evolved alongside Vietnam
                         for hundreds of years, and is worn for many occasions: photo shoots, Tết (Lunar New Year),
                         weddings, etc.
                     </p>
-                </div>
-            </section>
+                </section>
+            </div>
 
-            <section class="funfact_box2">
-                <div class="funfact_slideshow">
+            <div class="funfact_box2">
+                <section class="funfact_slideshow">
                     <figure class="w3-content w3-display-container slideshow-tet" style="max-width: 600px">
                         <div class="slide_frame">
                             <img class="tet_slides" src="../project/media/tet.jpeg" alt="A City During Tet">
@@ -122,9 +122,9 @@
                         <button class="w3-button w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
                         <button class="w3-button w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
                     </figure>
-                </div>
+                </section>
 
-                <div class="funfact_info">
+                <section class="funfact_info">
                     <h3>TẾT (LUNAR NEW YEAR)</h3>
                     <p>
                         Tết is Vietnamese Lunar New Year! This festival occurs in late January or early February,
@@ -134,8 +134,8 @@
                     <p>
                         <strong>Fun Fact:</strong> Elders gift the younger ones with red envelopes filled with “lucky money”!
                     </p>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
         <script>
             function toggleMenu() {
